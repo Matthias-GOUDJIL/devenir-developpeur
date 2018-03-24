@@ -6,8 +6,6 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-  text-align: center;
-  
 }
 
 
@@ -56,6 +54,9 @@ main {
 img {
   max-width: 100%;
   vertical-align: middle;
+  margin: auto;
+  
+  
 }
 
 
@@ -150,12 +151,14 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  border-radius: 5px;
+  background-color: #2d0922;
+  color: #F9F4D4FF
 }
 
 code {
   padding: 1px 5px;
+  margin: 5px;
 }
 
 pre {
@@ -164,8 +167,8 @@ pre {
 
   > code {
     border: 0;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 7px;
+    padding-left: 7px;
   }
 }
 
