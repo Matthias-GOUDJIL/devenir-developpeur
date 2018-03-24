@@ -8,11 +8,26 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:    30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #2a7ae2 !default;
+
+$header-text-color:         #fdfdfd !default;
+$header-background-color: rgba(91, 73, 104, 0.7)!default;
+$header-brand-color:      #fdfdfd !default;
+
+$post-text-color:       #111 !default;
+$post-background-color: #fdfdfd !default;
+$post-brand-color:      #2a7ae2 !default;
+
+$footer-text-color:       #fdfdfd !default;
+$footer-background-color: #111 !default;
+$footer-brand-color:      #2a7ae2 !default;
+
+
+
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;

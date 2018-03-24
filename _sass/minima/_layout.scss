@@ -3,8 +3,8 @@
  */
 .site-header {
   border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
+  background-color: $header-background-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -12,15 +12,25 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 300;
+  font-weight: 700;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+  color: $header-text-color;
+  text-align: center;
+  i {
+    color: #fff;
+    padding: 10px;
+    margin: 30px 10px;
+    background-color: #000;
+    border-radius: 15px;
+    float: left;
+    
+  }
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $header-text-color;
   }
 }
 
@@ -37,7 +47,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $header-text-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -52,7 +62,7 @@
     right: $spacing-unit / 2;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    border-radius: 50%;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -74,7 +84,7 @@
       text-align: center;
 
       > svg path {
-        fill: $grey-color-dark;
+        fill: $header-background-color;
       }
     }
 
@@ -106,14 +116,21 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 5px solid $grey-color-light;
   padding: $spacing-unit 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 2;
+  color: $footer-text-color;
+  &:visited{
+    color: $footer-text-color;
+  }
+  
 }
+
 
 .contact-list,
 .social-media-list {
@@ -177,6 +194,12 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  .wrapper {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 20px 20px 5px #aaa; 
+  }
 }
 
 .page-heading {
@@ -184,7 +207,10 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(1.5);
+  text-align: center;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;  
 }
 
 .post-list {
@@ -206,6 +232,10 @@
   @include relative-font-size(1.5);
 }
 
+.rss-subscribe {
+  float: right;
+}
+
 
 
 /**
@@ -216,12 +246,15 @@
 }
 
 .post-title {
-  @include relative-font-size(2.625);
+  @include relative-font-size(1.5);
   letter-spacing: -1px;
   line-height: 1;
+  text-align: center;
+  color: tomato;
+
 
   @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+    @include relative-font-size(1.5);
   }
 }
 
