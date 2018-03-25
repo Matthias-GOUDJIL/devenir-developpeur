@@ -1,7 +1,7 @@
 ---
+title: a propos
 layout: page
-title: About
-permalink: /about/
+permalink: "/about/"
 ---
 
-Blog conçu grâce au générateur de sites statiques [Jekyll](https://jekyllrb.com).
+Ebauche de blog conçu  grâce au générateur de sites statiques [Jekyll](https://jekyllrb.com) dans le cadre d'un projet à faire pour [ARINFO](https://www.arinfo.fr/).
